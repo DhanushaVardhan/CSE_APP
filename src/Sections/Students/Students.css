@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  align-items: center;
+  animation: 6s infinite;
+}
+.main {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.marq {
+  background-color: rgb(227, 222, 73);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+#head {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(202, 30, 30);
+}
+
+#inputData {
+  width: fit-content;
+  height: fit-content;
+  height: 30px;
+  color: #336699;
+  outline-color: #000000;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+input{
+  border-color: #f01f0c;
+}
+#button1 {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  animation: changeColor 3s infinite;
+}
+
+.imm{
+  padding: 2px;
+  margin-left: 10px;
+  width: 258px;
+  height: 200px;
+}
+
+.geek1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(187, 41, 41);
+  padding-bottom: 5px;
+  justify-content: center;
+}
+.card {
+  margin: 30px;
+  padding: 0px;
+  text-align: start;
+  border: 1px rgb(57, 174, 232) solid;
+  background-color: aliceblue;
+  /* display: none; */
+}
+.card ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 2px;
+}
+.student {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.details {
+  margin-top: 0px;
+  background: linear-gradient(to bottom right, #99ccff, #6699cc, #336699);
+  border: 2px yellow solid;
+  padding: 14.5px;
+}
+span {
+  font-size: medium;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #050963;
+  }
+  50% {
+    background-color: #1d590b;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+@keyframes listColor {
+  0% {
+    background-color: #f01f0c;
+  }
+  50% {
+    background-color: #200eec;
+  }
+  100% {
+    background-color: #13a8de;
+  }
+}

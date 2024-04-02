@@ -1,24 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from './Home';
+import NavBar from './Components/NavBar/NavBar.js';
+import Header from './Components/Header/Header.js';
+import Contact from './Components/Contact/Contact.js'
+import Banner from './Components/Banner/Banner.js';
+import Footer from './Components/Footer/Footer.js';
+import Highlights from './Components/Highlights/Highlights.js';
+import Notification from './Components/Notification/Notification.js';
+import Glimpse from './Components/Glimpse/Glimpse.js';
+import Marquee from './Components/Marquee/Marquee.js';
+import VisionMission from './Components/VisionMission/VisionMission.js';
+import { BrowserRouter,Routes,Route} from 'react-router-dom';
+
+import Faculty from './Sections/Faculty/Faculty.js';
+import Students from "./Sections/Students/Students.js";
+import About from './Sections/About/AboutDept.js';
+import Achievements from "./Sections/Achievements/Achievements.js";
+import Gallery from "./Sections/Gallery/Gallery.js"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Header />
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+          </Route>
+          <Route element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="faculty" element={<Faculty />} />
+          <Route path="students" element={<Students />}/>
+          <Route path="achievements" element={<Achievements />}/>
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
+}
+
+function Layout() {
+  return (
+    <>
+      <Marquee />
+      <Banner />
+      <VisionMission />
+      <Notification />
+      <Highlights />
+      <Glimpse />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 
