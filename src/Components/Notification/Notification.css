@@ -13,6 +13,7 @@
     width: 600px;
     height: 300px;
     overflow: hidden;
+    width: 75%;
 }
 
 .main-head {
@@ -40,15 +41,15 @@
     position: relative;
 }
 
-.ssb {
+ .ssb {
     list-style-type: none;
     padding: 0;
     animation: scroll-1 10s linear infinite;
-    
-}
+
+} 
 
 ul#news-list-2 {
-    animation: scroll-2 10s linear infinite;
+    animation: scroll-2 30s linear infinite;
 }
 
 .items {

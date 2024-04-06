@@ -42,11 +42,11 @@ const Contact = () => {
                     <br />
                     {contactInfo.email}
                 </p>
-                
-                <a className='icons'>
-                    <a href="https://www.linkedin.com/in/jntuacea-cse/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin">LinkedIn</i></a>
-                    <a href="https://www.instagram.com/jntuacea_cse/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter">Twitter</i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61557938032175" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook">FaceBook</i></a>
+
+                <a className='icons'>   
+                    <a href="https://www.linkedin.com/in/jntuacea-cse/" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/jntuacea_cse/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61557938032175" target="_blank"class="fa fa-facebook"></a>
                 </a>
             </div>
             <div className="address">

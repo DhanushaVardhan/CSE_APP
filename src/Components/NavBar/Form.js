@@ -10,8 +10,6 @@ const Form = ({ show, onClose }) => {
   const [admissionNo, setAdmissionNo] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [formDisabled, setFormDisabled] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,88 +28,83 @@ const Form = ({ show, onClose }) => {
       });
       const data = await response.json();
       console.log(data);
-      setSubmitted(true);
-      setFormDisabled(true); // Disable the form after submission
-      setTimeout(() => {
-        navigate('/');
-      }, 2000);
+      toast.success("Successfully registered!"); // Display success notification
+      // Clear form data
+      setName("");
+      setAdmissionNo("");
+      setEmail("");
+      setPhoneNumber("");
+      // Redirect to home page after form submission
+      navigate('/');
     } catch (error) {
       console.error(error);
     }
   };
 
   const handleClose = () => {
-    if (!submitted) {
-      onClose();
-    }
+    onClose();
   };
 
   return (
     <div className={`login-page ${show ? "show" : ""}`}>
-      {!submitted && ( // Render the form only if not submitted
-        <div className="login-form">
-          <form onSubmit={handleSubmit} className="form-container">
-            <label htmlFor="name" className="form-label">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="form-input"
-              disabled={formDisabled} // Disable input field after submission
-            />
+      <div className="login-form">
+        <form onSubmit={handleSubmit} className="form-container">
+          <label htmlFor="name" className="form-label">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="form-input"
+            required
+          />
 
-            <label htmlFor="admissionNo" className="form-label">
-              Admission No
-            </label>
-            <input
-              type="text"
-              id="admissionNo"
-              value={admissionNo}
-              onChange={(e) => setAdmissionNo(e.target.value)}
-              className="form-input"
-              disabled={formDisabled}
-            />
+          <label htmlFor="admissionNo" className="form-label">
+            Admission No
+          </label>
+          <input
+            type="text"
+            id="admissionNo"
+            value={admissionNo}
+            onChange={(e) => setAdmissionNo(e.target.value)}
+            className="form-input"
+            required
+          />
 
-            <label htmlFor="email" className="form-label">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="form-input"
-              disabled={formDisabled}
-            />
+          <label htmlFor="email" className="form-label">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="form-input"
+            required
+          />
 
-            <label htmlFor="phoneNumber" className="form-label">
-              Phone Number
-            </label>
-            <input
-              type="tel"
-              id="phoneNumber"
-              value={phoneNumber}
-              onChange={(e) => setPhoneNumber(e.target.value)}
-              className="form-input"
-              disabled={formDisabled}
-            />
+          <label htmlFor="phoneNumber" className="form-label">
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+            className="form-input"
+            minLength='10'
+            maxLength='10'
+            required
+          />
 
-            <button type="submit" className="form-submit-button" disabled={formDisabled}>
-              Submit
-            </button>
-            <button type="button" onClick={handleClose} className='close' disabled={formDisabled}>Close</button>
-          </form>
-        </div>
-      )}
-      {submitted && (
-        <div className="success-message">
-          <p>Successfully registered!</p>
-          <p>Redirecting to home page...</p>
-        </div>
-      )}
+          <button type="submit" className="form-submit-button">
+            Submit
+          </button>
+          <button type="button" onClick={handleClose} className='close' >Close</button>
+        </form>
+      </div>
     </div>
   );
 };
