@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/DhanushaVardhan/CSE_APP/static/css/main.f8e50f3a.css",
+    "main.js": "/DhanushaVardhan/CSE_APP/static/js/main.bba31ae7.js",
+    "static/media/student.jpg": "/DhanushaVardhan/CSE_APP/static/media/student.40ac94992ac2b1c8c308.jpg",
+    "static/media/Geethacharan.jpeg": "/DhanushaVardhan/CSE_APP/static/media/Geethacharan.b2afcf1090fb792bd28c.jpeg",
+    "static/media/pixel.jpg": "/DhanushaVardhan/CSE_APP/static/media/pixel.cc206e4311f9b1347b4a.jpg",
+    "static/media/community.jpg": "/DhanushaVardhan/CSE_APP/static/media/community.433d2438e42e7a638d3a.jpg",
+    "static/media/cse.jpg": "/DhanushaVardhan/CSE_APP/static/media/cse.e9e75caa0c6bb2acec36.jpg",
+    "static/media/virtual.jpg": "/DhanushaVardhan/CSE_APP/static/media/virtual.7f5acb14419f5c760c85.jpg",
+    "static/media/placement2.jpg": "/DhanushaVardhan/CSE_APP/static/media/placement2.751a8bd292da0f8a4b0d.jpg",
+    "static/media/placement1.jpg": "/DhanushaVardhan/CSE_APP/static/media/placement1.1a52e784b7050f325ffd.jpg",
+    "static/media/faculty.jpg": "/DhanushaVardhan/CSE_APP/static/media/faculty.1c039c5c2cea2d38f7ab.jpg",
+    "static/media/book.jpg": "/DhanushaVardhan/CSE_APP/static/media/book.6571720cd6ce0d2ed5eb.jpg",
+    "static/media/abc.png": "/DhanushaVardhan/CSE_APP/static/media/abc.d7177e6be15d9754f858.png",
+    "static/media/Mahanth.jpg": "/DhanushaVardhan/CSE_APP/static/media/Mahanth.02ba1333029d236a0095.jpg",
+    "static/media/Prabhas.jpg": "/DhanushaVardhan/CSE_APP/static/media/Prabhas.961145fa623dc3925c96.jpg",
+    "static/media/high2.jpg": "/DhanushaVardhan/CSE_APP/static/media/high2.4108b03fb811f1c9123c.jpg",
+    "static/media/high1.jpg": "/DhanushaVardhan/CSE_APP/static/media/high1.e45eac8e5e49bafc60a9.jpg",
+    "static/media/high3.jpg": "/DhanushaVardhan/CSE_APP/static/media/high3.19aff1afaf23e8db74aa.jpg",
+    "static/media/logo.webp": "/DhanushaVardhan/CSE_APP/static/media/logo.9c44c4b444c66614f13d.webp",
+    "static/media/Roopesh.jpg": "/DhanushaVardhan/CSE_APP/static/media/Roopesh.7ad00991f368fccabc6a.jpg",
+    "static/media/slick.svg": "/DhanushaVardhan/CSE_APP/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/DhanushaVardhan/CSE_APP/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/DhanushaVardhan/CSE_APP/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/DhanushaVardhan/CSE_APP/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/DhanushaVardhan/CSE_APP/index.html",
+    "main.f8e50f3a.css.map": "/DhanushaVardhan/CSE_APP/static/css/main.f8e50f3a.css.map",
+    "main.bba31ae7.js.map": "/DhanushaVardhan/CSE_APP/static/js/main.bba31ae7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8e50f3a.css",
+    "static/js/main.bba31ae7.js"
+  ]
+}
